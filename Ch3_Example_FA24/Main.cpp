@@ -2,6 +2,7 @@
 
 int ops();
 void print();
+void argList(int x, int y, int z);
 
 int main()
 {
@@ -18,6 +19,10 @@ int main()
 
 	print();
 
+	int a = 1, b = 2, c = 3;
+	argList(a, b, c);
+	std::cout << a << " " << b << " " << c << std::endl;
+
 	return 0;
 }
 
@@ -30,4 +35,13 @@ void print()
 {
 	return;
 	std::cout << "Hello, World!" << std::endl;
+}
+
+void argList(int x, int y, int z)
+{
+	std::cout << x << " " << y << " " << z << std::endl;
+	x = x + 1;
+	y = y + 2;
+	z = x + y;
+	std::cout << x << " " << y << " " << z << std::endl;
 }
