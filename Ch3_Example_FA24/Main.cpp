@@ -1,5 +1,8 @@
 #include <iostream>
 
+int ops();
+void print();
+
 int main()
 {
 	int x = 2147483647;
@@ -11,7 +14,20 @@ int main()
 	std::cout << 'G' % 'A' << std::endl; // 71 % 65 = 6
 
 	std::cout << (81 + 32) / 2 << std::endl;
-	std::cout << char(81 + 32) / 2 << std::endl;
+	std::cout << ops() << std::endl;
+
+	print();
 
 	return 0;
+}
+
+int ops()
+{
+	return char(81 + 32) / 2;
+}
+
+void print()
+{
+	return;
+	std::cout << "Hello, World!" << std::endl;
 }
